@@ -21,8 +21,9 @@
 
 <body>
 
-    <h1>WELCOME TO THE BARRY CUMBIE FANPAGE</h1>
+  <h1>WELCOME TO THE BARRY CUMBIE FANPAGE</h1>
 
+  <form>
     <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
@@ -33,59 +34,74 @@
                 <input id="userName" class="form-control" type="text" placeholder="Enter Your User Name" name="userName">
                 <p></p>
 
+                <label for="passWord">PASSWORD</label>
 
-                <label for="passWord" class="form-label">PASSWORD</label>
-                <input id="passWord" class="form-control" type="text" placeholder="Enter Password" name="passWord">
-                <p></p>
+              <div class="form-group">
+                <div class="input-group">
+                  <input id="passWord" class="form-control pwd" type="text" placeholder="Enter Password" name="passWord">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default reveal" type="button"><i class="bi-eye-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                        </svg>
+                      </i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            <p></p>
 
                 <!-- MALE/FEMALE/OTHER Gender Selection -->
                 <!-- radio toggle buttons -->
-                <div class="mb-4">
-                    <p>Please select your gender!</p>
-                    <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male" style="margin-right: 5em;">Male</label>
 
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female" style="margin-right: 5em;">Female</label>
+              <div class="mb-4">
+                <p>Please select your gender!</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male" style="margin-right: 5em;">Male</label>
 
-                    <input type="radio" id="otherGender" name="gender" value="genderOther">
-                    <label for="otherGender">Other</label><br>
-                </div>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female" style="margin-right: 5em;">Female</label>
+
+                <input type="radio" id="otherGender" name="gender" value="genderOther">
+                <label for="otherGender">Other</label><br>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- These need to take in only numbers -->
-        <div class="row">
-            <div>
-                <div class="col-sm-4">
-                    <div class="card-body">
-                        <h3 class="card-title">CARD INFO</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card-body">
+            <h3 class="card-title">CARD INFO</h3>
 
-                        <label for="cardNumber" class="form-label">CREDIT CARD NUMBER</label>
-                        <input id="cardNumber" class="form-control" type="text" placeholder="Enter Your Card Number" name="cardNumber">
-                        <p></p>
+            <label for="cardNumber" class="form-label">CREDIT CARD NUMBER</label>
+            <input id="cardNumber" class="form-control" type="text" placeholder="Enter Your Card Number" name="cardNumber">
+            <p></p>
 
-                        <label for="expDate" class="form-label">EXPIRATION DATE</label>
-                        <input id="expDate" class="form-control" type="text" placeholder="Enter Your Expiration Date" name="expDate">
-                        <p></p>
+            <label for="expDate" class="form-label">EXPIRATION DATE</label>
+            <input id="expDate" class="form-control" type="text" placeholder="Enter Your Expiration Date" name="expDate">
+            <p></p>
 
-                        <label for="cvvNumber" class="form-label">CVV NUMBER</label>
-                        <input id="cvvNumber" class="form-control" type="text" placeholder="Enter Your CVV Number" name="cvvNumber">
-                        <p></p>
+            <label for="cvvNumber" class="form-label">CVV NUMBER</label>
+            <input id="cvvNumber" class="form-control" type="text" placeholder="Enter Your CVV Number" name="cvvNumber">
+            <p></p>
 
-                    </div>
-                </div>
-            </div>
+            <input id="resetBtn" type="reset" value="Reset">
+            <input id="submitBtn" type="submit" value="Submit">
 
+          </div>
         </div>
-
-
-
+      </div>
+    </div>
+  </form>
+    
+      
+      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="scripts/scripts.js"></script>  
-</body>
 
-</html>
+</body>
