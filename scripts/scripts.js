@@ -29,11 +29,47 @@ $("#cvvNumber").keyup(function (e) {
 
 });
 
+$(".gender").click(function(){
+    selected_value = $("input:radio[name='gender']:checked").val();
+    if(selected_value === "Male"){
+        $("#Message").empty().append('<p>Your pronouns are he/him.</p>');
+    } else if (selected_value === "Female"){
+        $("#Message").empty().append('<p>Your pronouns are she/her.</p>');
+    } else {
+        $("#Message").empty().append('<p>Enter your pronouns: <input id="pronoun" class="form-control" type="text" placeholder="Enter Pronouns" name="Pronoun-Text-Box"></p>');
+    }
 
-$(function() {
-    console.log( "ready!" );
-  
-  //click the eye icon w/class reveal 
+});
+
+
+// Function to load default values into form fields
+function loadDefaultValues() {
+
+    // Default values for each field
+    const defaultValues = {
+        userName: "JohnDoe",
+        passWord: "Password123",
+        gender: "Male",
+        cardNumber: "1234 5678 9012 3456",
+        expDate: "12/25",
+        cvvNumber: "123"
+    };
+
+    // Loop through each field and set its value
+    for (let field in defaultValues) {
+        if (defaultValues.hasOwnProperty(field)) {
+            document.getElementById(field).value = defaultValues[field];
+        }
+    }
+}
+
+window.onload = loadDefaultValues;
+
+
+
+//click the eye icon w/class reveal
+$(function() { 
+
   $(".reveal").on('click',function() {
     let $pwd = $(".pwd");
     

@@ -22,6 +22,7 @@
 <body>
 
   <h1>WELCOME TO THE BARRY CUMBIE FANPAGE</h1>
+  <button onclick="loadDefaultValues()">Load Default Values</button>
 
   <form>
     <div class="container-fluid">
@@ -34,8 +35,8 @@
                 <input id="userName" class="form-control" type="text" placeholder="Enter Your User Name" name="userName">
                 <p></p>
 
-                <label for="passWord">PASSWORD</label>
 
+            <label for="passWord">PASSWORD</label>
               <div class="form-group">
                 <div class="input-group">
                   <input id="passWord" class="form-control pwd" type="text" placeholder="Enter Password" name="passWord">
@@ -57,14 +58,17 @@
 
               <div class="mb-4">
                 <p>Please select your gender!</p>
-                <input type="radio" id="male" name="gender" value="Male">
+                <input type="radio" class="gender" id="genderM" name="gender" value="Male">
                 <label for="male" style="margin-right: 5em;">Male</label>
 
-                <input type="radio" id="female" name="gender" value="Female">
+                <input type="radio" class="gender" id="genderF" name="gender" value="Female">
                 <label for="female" style="margin-right: 5em;">Female</label>
 
-                <input type="radio" id="otherGender" name="gender" value="genderOther">
+                <input type="radio" class="gender" id="genderO" name="gender" value="genderOther">
                 <label for="otherGender">Other</label><br>
+
+                <div id="Message"></div>
+
               </div>
             </div>
           </div>
