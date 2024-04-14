@@ -63,7 +63,8 @@ function loadDefaultValues() {
     }
 }
 
-window.onload = loadDefaultValues;
+//if i want to print default data on page load use this 
+// window.onload = loadDefaultValues;
 
 
 
