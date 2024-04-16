@@ -42,31 +42,6 @@ $(".gender").click(function(){
 });
 
 
-// Function to load default values into form fields
-function loadDefaultValues() {
-
-    // Default values for each field
-    const defaultValues = {
-        userName: "JohnDoe",
-        passWord: "Password123",
-        gender: "Male",
-        cardNumber: "1234 5678 9012 3456",
-        expDate: "12/25",
-        cvvNumber: "123"
-    };
-
-    // Loop through each field and set its value
-    for (let field in defaultValues) {
-        if (defaultValues.hasOwnProperty(field)) {
-            document.getElementById(field).value = defaultValues[field];
-        }
-    }
-}
-
-//if i want to print default data on page load use this 
-// window.onload = loadDefaultValues;
-
-
 
 //click the eye icon w/class reveal
 $(function() { 
