@@ -1,7 +1,60 @@
 body{
+    background-image: url(https://www.una.edu/directory/img/789.jpg);
     background-color: burlywood;
+    font-family: sans-serif;
 }
 
 h1{
     text-align: center;
+    background-color: burlywood;
+    color: brown;
+}
+
+a{
+    background-color: burlywood;
+    color: brown;
+}
+
+.h4{
+    text-align: left;
+    margin-right: 75%;
+}
+
+h5{
+    margin-bottom: auto;
+    background-color: burlywood;
+    color: brown;
+}
+
+.h6{
+    text-align: right;
+    margin-left: auto;
+}
+
+
+#resetBtn{
+    background-color: red;
+    border: 3px;
+    border-style: dashed;
+    border-color: white;
+}
+
+#submitBtn{
+    background-color: green;
+    border: 3px;
+    border-style: dashed;
+    border-color: white;
+}
+
+#defaultBtn{
+    background-color: blueviolet;
+    font-size: large;
+    color: blanchedalmond;
+    border-style: dashed;
+    border-color: white;
+}
+
+.btn-default{
+    color: black;
+    background-color: burlywood;
 }
